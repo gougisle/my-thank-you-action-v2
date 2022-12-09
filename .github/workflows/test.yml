@@ -1,6 +1,12 @@
 name: Test
 
 on: [pull_request]
+on:
+  pull_request:
+    types: [opened,closed,merged]
+    branches: 
+      - master
+      - main 
 
 jobs:
   test:
@@ -10,3 +16,4 @@ jobs:
       - uses: ./
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          PULL_REQUEST: ${{github.event.pull_request}}
