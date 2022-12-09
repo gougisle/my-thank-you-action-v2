@@ -1,0 +1,22 @@
+## This file with hold the actual action that
+## will be run via the GH workflow we create later
+
+name: "Thank You Action"
+description: 'Say "Thank You" for the new PR'
+author: "Lefeba Gougis"
+
+## Input configuration options so that use their own instances and tokens
+inputs:
+  GITHUB_TOKEN:
+    description: "GitHub token"
+    required: true
+  TENOR_TOKEN:
+    description: "Tenor API token"
+    required: true
+
+## Set out enviornment
+## Using node v14 to run JS
+## our main is going to ultimately be the location(path) of the script we want to run
+runs:
+  using: "node12"
+  main: "dist/index.js" ## Our main entry point

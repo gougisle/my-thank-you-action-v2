@@ -1,0 +1,25 @@
+{
+  "name": "my-thank-you-action-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gougisle/my-thank-you-action-v2.git"
+  },
+  "author": "Lefeba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gougisle/my-thank-you-action-v2/issues"
+  },
+  "homepage": "https://github.com/gougisle/my-thank-you-action-v2#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@vercel/ncc": "^0.36.0"
+  }
+}
