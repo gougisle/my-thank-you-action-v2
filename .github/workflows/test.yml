@@ -1,12 +1,11 @@
 name: Test
 
-on: [pull_request]
 on:
   pull_request:
-    types: [opened,closed,merged]
-    branches: 
+    types: [opened, closed, merged]
+    branches:
       - master
-      - main 
+      - main
 
 jobs:
   test:
